@@ -13,7 +13,7 @@
         <!--Test-->
         <scene sceneID="L2l-t7-Lkd">
             <objects>
-                <viewController id="9yQ-oW-TNR" sceneMemberID="viewController">
+                <viewController id="9yQ-oW-TNR" customClass="TestingViewController" customModule="Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JVB-VS-0Li">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,20 +25,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2d-4e-FxL">
-                                <rect key="frame" x="16" y="271" width="158" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next word"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-zu-omK">
                                 <rect key="frame" x="206" y="271" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Random word"/>
+                                <connections>
+                                    <action selector="getRandomWord:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="LNa-kP-ZUn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aok-W7-vtu">
-                                <rect key="frame" x="139" y="452" width="97" height="30"/>
+                                <rect key="frame" x="47" y="452" width="281" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Verificate"/>
+                                <connections>
+                                    <action selector="getVerification:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="Trp-N4-uxU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQv-iM-YtM">
                                 <rect key="frame" x="47" y="380" width="281" height="30"/>
@@ -47,11 +48,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2d-4e-FxL">
+                                <rect key="frame" x="16" y="271" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next word"/>
+                                <connections>
+                                    <action selector="getNextWord:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="TNR-FG-qsj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qtb-k6-pNq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" id="bTJ-eT-xD6"/>
+                    <connections>
+                        <outlet property="answer" destination="kQv-iM-YtM" id="dcJ-Dv-KVf"/>
+                        <outlet property="testingWord" destination="ySx-58-zWj" id="vFy-xz-7th"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbK-FC-INY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

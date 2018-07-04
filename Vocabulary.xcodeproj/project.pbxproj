@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9822EB9C20EBB6CC0094ED05 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822EB9B20EBB6CC0094ED05 /* AddingViewController.swift */; };
 		9822EB9E20EBBBF20094ED05 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */; };
+		986EE30B20ECF41000D9C4F4 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */; };
 		9883A9AD20EA42A4000603C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883A9AC20EA42A4000603C1 /* AppDelegate.swift */; };
 		9883A9B220EA42A4000603C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9883A9B020EA42A4000603C1 /* Main.storyboard */; };
 		9883A9B520EA42A4000603C1 /* Vocabulary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9883A9B320EA42A4000603C1 /* Vocabulary.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		9822EB9B20EBB6CC0094ED05 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 		9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		9883A9A920EA42A4000603C1 /* Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9883A9AC20EA42A4000603C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9883A9B120EA42A4000603C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				9883A9AC20EA42A4000603C1 /* AppDelegate.swift */,
 				9883A9B020EA42A4000603C1 /* Main.storyboard */,
 				9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */,
+				986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */,
 				9883A9C120EB8873000603C1 /* DBW.swift */,
 				9883A9B620EA42A6000603C1 /* Assets.xcassets */,
 				9883A9B820EA42A6000603C1 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				9883A9C220EB8873000603C1 /* DBW.swift in Sources */,
 				9883A9B520EA42A4000603C1 /* Vocabulary.xcdatamodeld in Sources */,
 				9883A9AD20EA42A4000603C1 /* AppDelegate.swift in Sources */,
+				986EE30B20ECF41000D9C4F4 /* TestingViewController.swift in Sources */,
 				9822EB9E20EBBBF20094ED05 /* ListTableViewController.swift in Sources */,
 				9822EB9C20EBB6CC0094ED05 /* AddingViewController.swift in Sources */,
 			);
