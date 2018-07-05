@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9808045120EE7131005DAC43 /* HelpingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808045020EE7131005DAC43 /* HelpingActions.swift */; };
 		9822EB9C20EBB6CC0094ED05 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822EB9B20EBB6CC0094ED05 /* AddingViewController.swift */; };
 		9822EB9E20EBBBF20094ED05 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */; };
 		986EE30B20ECF41000D9C4F4 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9808045020EE7131005DAC43 /* HelpingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingActions.swift; sourceTree = "<group>"; };
 		9822EB9B20EBB6CC0094ED05 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 		9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				9822EB9B20EBB6CC0094ED05 /* AddingViewController.swift */,
 				9883A9AC20EA42A4000603C1 /* AppDelegate.swift */,
 				9883A9B020EA42A4000603C1 /* Main.storyboard */,
+				9808045020EE7131005DAC43 /* HelpingActions.swift */,
 				9822EB9D20EBBBF20094ED05 /* ListTableViewController.swift */,
 				986EE30A20ECF41000D9C4F4 /* TestingViewController.swift */,
 				9883A9C120EB8873000603C1 /* DBW.swift */,
@@ -153,6 +156,7 @@
 				986EE30B20ECF41000D9C4F4 /* TestingViewController.swift in Sources */,
 				9822EB9E20EBBBF20094ED05 /* ListTableViewController.swift in Sources */,
 				9822EB9C20EBB6CC0094ED05 /* AddingViewController.swift in Sources */,
+				9808045120EE7131005DAC43 /* HelpingActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJQQSG4T4A;
 				INFOPLIST_FILE = Vocabulary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJQQSG4T4A;
 				INFOPLIST_FILE = Vocabulary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

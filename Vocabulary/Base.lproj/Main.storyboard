@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test-->
+        <!--Проверь себя!-->
         <scene sceneID="L2l-t7-Lkd">
             <objects>
                 <viewController id="9yQ-oW-TNR" customClass="TestingViewController" customModule="Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGc-zu-omK">
                                 <rect key="frame" x="206" y="271" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Random word"/>
+                                <state key="normal" title="Случайное слово"/>
                                 <connections>
                                     <action selector="getRandomWord:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="LNa-kP-ZUn"/>
                                 </connections>
@@ -36,7 +36,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aok-W7-vtu">
                                 <rect key="frame" x="47" y="452" width="281" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Verificate"/>
+                                <state key="normal" title="Проверить перевод"/>
                                 <connections>
                                     <action selector="getVerification:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="Trp-N4-uxU"/>
                                 </connections>
@@ -51,7 +51,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2d-4e-FxL">
                                 <rect key="frame" x="16" y="271" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next word"/>
+                                <state key="normal" title="Следующее слово"/>
                                 <connections>
                                     <action selector="getNextWord:" destination="9yQ-oW-TNR" eventType="touchUpInside" id="TNR-FG-qsj"/>
                                 </connections>
@@ -60,7 +60,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qtb-k6-pNq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Test" id="bTJ-eT-xD6"/>
+                    <tabBarItem key="tabBarItem" title="Проверь себя!" id="bTJ-eT-xD6"/>
                     <connections>
                         <outlet property="answer" destination="kQv-iM-YtM" id="dcJ-Dv-KVf"/>
                         <outlet property="testingWord" destination="ySx-58-zWj" id="vFy-xz-7th"/>
@@ -70,15 +70,15 @@
             </objects>
             <point key="canvasLocation" x="1469.5999999999999" y="1078.1109445277361"/>
         </scene>
-        <!--New word-->
+        <!--Новое слово-->
         <scene sceneID="DG2-qn-0qT">
             <objects>
-                <viewController id="Rl7-2v-bXD" customClass="AddingViewController" customModule="Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rl7-2v-bXD" userLabel="Новое слово" customClass="AddingViewController" customModule="Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZO-8q-2v5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your word here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-vU-nqM">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваше слово" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-vU-nqM">
                                 <rect key="frame" x="44" y="318" width="287" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -88,7 +88,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOU-B9-cTY">
                                 <rect key="frame" x="94" y="431" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Добавить слово"/>
                                 <connections>
                                     <action selector="addWord:" destination="Rl7-2v-bXD" eventType="touchUpInside" id="g2t-Ri-0BB"/>
                                 </connections>
@@ -97,12 +97,12 @@
                                 <rect key="frame" x="52" y="137" width="271" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Add your new words here.
-Next you can test yourself with them :)</string>
+                                <string key="text">Добавляйте Ваши слова здесь.
+Вы сможете проверить себя далее :)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Translate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-9b-rZd">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Перевод" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-9b-rZd">
                                 <rect key="frame" x="44" y="356" width="287" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -113,7 +113,7 @@ Next you can test yourself with them :)</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eVp-hR-wif"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New word" id="FvQ-tA-1BW"/>
+                    <tabBarItem key="tabBarItem" title="Новые слова" id="FvQ-tA-1BW"/>
                     <connections>
                         <outlet property="translate" destination="ckY-9b-rZd" id="gT4-EV-Qnu"/>
                         <outlet property="word" destination="YXc-vU-nqM" id="dmk-gb-fBd"/>
@@ -146,7 +146,7 @@ Next you can test yourself with them :)</string>
                             <outlet property="delegate" destination="CZh-I3-wpP" id="Yrz-8s-POa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="List" id="lPQ-Z8-hiS"/>
+                    <tabBarItem key="tabBarItem" title="Список слов" id="lPQ-Z8-hiS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvU-lR-XeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

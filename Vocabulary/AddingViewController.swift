@@ -21,16 +21,21 @@ class AddingViewController: UIViewController {
 
     @IBAction func addWord(_ sender: Any) {
         if word.text! != "" && translate.text! != "" {
-            if DBW.checkForEntrance(word: word.text!) {
+            if DBW.checkForEntrance(word: word.text!.lowercased()) {
+                HelpingActions.okAlert(title: "Ошибка", message: "Такое слово уже есть!", view: self)
+                word.text?.removeAll()
+                translate.text?.removeAll()
                 print("uje est' slovo takoe, suka glupaya")
             } else {
-            DBW.addToDB(word: word.text!, translate: translate.text!)
-            print("uspeshno dobavleno. alert")
-            word.text = ""
-            translate.text = ""
+                DBW.addToDB(word: word.text!.lowercased(), translate: translate.text!.lowercased())
+                HelpingActions.okAlert(title: "Успех", message: "Слово успешно добавлено!", view: self)
+                print("uspeshno dobavleno. alert")
+                word.text?.removeAll()
+                translate.text?.removeAll()
                 
             }
         } else {
+            HelpingActions.okAlert(title: "Ошибка", message: "Нужно заполнить оба поля.", view: self)
             print("zdes' budet alert. net teksta!")
         }
     }
